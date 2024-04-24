@@ -1,0 +1,20 @@
+analisis del problema:
+este codigo hace un analisiss estadistico de datos de calorias obtenidos de un archivo csv 
+
+1. Importación de bibliotecas y carga de datos: Se importa la biblioteca NumPy y se utiliza la función genfromtxt() para cargar los datos de calorías desde un archivo CSV ubicado en una URL. Los datos se almacenan en la variable calorie_stats.
+
+2. Cálculo del promedio de calorías: Se calcula el promedio de calorías utilizando la función np.mean(). Se imprimen dos líneas, una indicando el promedio ajustado restando 60 y otra el promedio sin ajustar.
+
+3. Organización de los datos y cálculo de la mediana: Los datos se ordenan utilizando np.sort() y se calcula la mediana con np.median(). Se imprime la mediana.
+
+4. Cálculo de la desviación estándar: La desviación estándar se calcula con np.std() y se imprime.
+
+5. Cálculo del percentil requerido: Utilizando un bucle while, se encuentra el percentil en el que se encuentra el valor 60. Se imprime el percentil requerido.
+
+6. Cálculo del porcentaje de cereales con más de 60 calorías: Se calcula el porcentaje de cereales que tienen más de 60 calorías y se imprime.
+
+7. Cálculo de la desviación estándar de las calorías: Se calcula la desviación estándar de las calorías y se imprime.
+
+
+ 
+
