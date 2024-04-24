@@ -1,0 +1,27 @@
+
+ANALISIS DEL CODIGO AVANZADO CON AYUDA DE CHAT GPT
+este codigo hace un analisiss estadistico de datos de calorias obtenidos de un archivo csv
+
+1. Descarga de datos y cálculo del promedio de calorías:
+**Se descarga el archivo CSV desde la URL proporcionada utilizando la biblioteca requests.
+**Los datos se cargan en un arreglo NumPy utilizando np.genfromtxt().
+**Se calcula el promedio de calorías utilizando np.mean() y se imprime.
+
+2. Organización de datos, cálculo de la mediana y del primer percentil mayor a 60:
+**Los datos se ordenan utilizando np.sort().
+**Se calcula la mediana con np.median() y se imprime.
+**Se encuentra el primer percentil mayor a 60 utilizando un bucle for y np.percentile(). Se imprime el percentil encontrado.
+
+3. Cálculo del porcentaje de cereales con más de 60 calorías y la desviación estándar:
+**Se calcula el porcentaje de cereales con más de 60 calorías utilizando la suma de valores mayores a 60 y dividiendo por el total de cereales. Se imprime el resultado.
+**Se calcula la desviación estándar de las calorías utilizando np.std() y se imprime.
+
+4. Resumen de los cinco números, promedio y desviación estándar de las ventas:
+**Se descargan los datos de ventas desde una URL similar al paso 1.
+**Los datos se cargan en un arreglo NumPy.
+**Se calcula el resumen de los cinco números (mínimo, primer cuartil, mediana, tercer cuartil y máximo) utilizando np.percentile().
+**Se calcula el promedio y la desviación estándar de las ventas con np.mean() y np.std().
+Los resultados se imprimen en la consola.
+
+5. Guardado de los datos de las ventas en un archivo CSV:
+Se guardan los resultados obtenidos en un archivo CSV llamado sales_summary.csv.
